@@ -16,6 +16,8 @@ public class A2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a2);
+
+        // idk what this does.......... auto generated {{{
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -27,20 +29,25 @@ public class A2 extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        // }}}
 
+        // fetch message from intent that sent us here
         Intent intent = getIntent();
         String msg = intent.getStringExtra(A1.EXTRA_MESSAGE);
 
+        // set value of T2 based on this
         TextView textView = (TextView) findViewById(R.id.T2);
         textView.setText("Hello " + msg);
 
     }
 
+    // onclick of button -> start activity A3
     public void clicked(View view) {
         Intent intent = new Intent(this, A3.class);
         startActivityForResult(intent, 123);
     }
 
+    // when an activity we called returns info to us -> fetch info and set T3
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

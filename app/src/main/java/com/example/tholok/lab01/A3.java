@@ -15,6 +15,8 @@ public class A3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a3);
+
+        // idk what this is.... auto-generated {{{
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -26,8 +28,11 @@ public class A3 extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        //}}}
     }
 
+    // onclicked button -> send value of T4 back to calling activity
     public void clicked(View view) {
 
         EditText editText = (EditText) findViewById(R.id.T4);
