@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">lab01</string>
+    <string-array name="cool_countries">
+        <item>Norway</item>
+        <item>Sweden</item>
+        <item>Finland</item>
+        <item>Denmark</item>
+    </string-array>
+    <string name="title_activity_a2">A2</string>
+    <string name="title_activity_a3">A3</string>
+</resources>
