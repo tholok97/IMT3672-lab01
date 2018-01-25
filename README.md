@@ -1,5 +1,11 @@
 # Lab01 in IMT3672
 
+## How to run
+
+* Get it on your machine with `git clone https://github.com/tholok97/IMT3672-lab01.git`
+* Open it in Android Studio (File -> Open, and select it).
+* Run it. It might take some time to build, but should work out-of-the-box.
+
 ## Task description (copied from gitlab)
 
 Create an application consisting of 3 activities. 
